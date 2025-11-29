@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Transaction System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Sistem Verifikasi Transaksi dengan OTP</h2>
+
+        <!-- Bagian 1: Input Data Transaksi -->
+        <div class="card">
+            <h3>Data Transaksi</h3>
+
+            <label>Saldo Anda:</label>
+            <input type="number" id="saldo" placeholder="Masukkan saldo">
+
+            <label>Nominal Transaksi:</label>
+            <input type="number" id="nominal" placeholder="Masukkan nominal">
+
+            <button id="btnGenerate">Generate OTP</button>
+        </div>
+
+        <!-- Bagian 2: Input OTP -->
+        <div class="card">
+            <h3>Verifikasi OTP</h3>
+
+            <p id="otpInfo">OTP belum dibuat.</p>
+
+            <label>Masukkan OTP:</label>
+            <input type="number" id="inputOtp" placeholder="Masukkan OTP">
+
+            <button id="btnVerify">Verifikasi OTP</button>
+        </div>
+
+        <!-- Bagian 3: Hasil -->
+        <div class="card result">
+            <h3>Hasil</h3>
+            <p id="hasil">Belum ada proses.</p>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
